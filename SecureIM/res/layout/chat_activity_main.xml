@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Send" />
+
+    <Button
+        android:id="@+id/addChatButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Add" />
+
+    <ListView
+        android:id="@+id/chatListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sendButton"
+        android:layout_below="@+id/addChatButton"
+        android:layout_centerHorizontal="true" >
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/userNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/addChatButton"
+        android:layout_alignBottom="@+id/addChatButton"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="8dp"
+        android:text="Chatting with..."
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/inputText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/sendButton"
+        android:layout_alignBottom="@+id/sendButton"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/addChatButton"
+        android:ems="10" />
+
+</RelativeLayout>

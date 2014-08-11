@@ -1,0 +1,46 @@
+This is the compilation guide for running the server of SecureIM.
+
+1.	Install Java (JDK):
+
+	If you do not have JDK installed, you can install it by following the instructions:
+	
+	apt-get install python-software-properties
+	add-apt-repository ppa:ferramroberto/java
+	apt-get update
+	apt-get install sun-java6-jdk sun-java6-jre
+	
+2. Install MySQL:
+
+	If you do not have MySQL installed, you may install xampp by following the instructions:
+	
+	get latest version from xampp: http://www.apachefriends.org/en/xampp-linux.html
+	follow the instruction on the page to install and start xampp
+	
+3.	Import sample database tables to MySQL
+
+	I use phpMyAdmin to manage MySQL, you can do the same way
+	
+	get into phpmyadmin page
+	import "CSCI3310.sql"
+	
+4.	Modify constant variables in MessageServer.java
+	
+	some variables are configured for running my own MySQL
+	change it to your configuration by 
+	modifying variables "url", "user" and "password" in line 17, 18, 19 of the source code
+	
+5.	Modify run.sh
+
+	change the variable "DIR" in the script to the directory you extracted the files
+	run run.sh by input command "./run.sh" to run message server
+	
+6.	Modify the ip address of message server on client side
+	
+	open the Android project of SecureIM
+	open the file MessageClient.java in SecureIM/src/com/example/secureim/
+	modify variable "defaultHost" to the ip of your message server
+	build the app and run on emulator or any Android devices
+	
+7.	Done!
+
+8.	Contact me if encounter any difficulties via email: yhlo0@cse.cuhk.edu.hk
