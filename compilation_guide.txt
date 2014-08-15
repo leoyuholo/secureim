@@ -43,4 +43,4 @@ This is the compilation guide for running the server of SecureIM.
 	
 7.	Done!
 
-8.	Contact me if encounter any difficulties via email: yhlo0@cse.cuhk.edu.hk
+8.	Contact me if encounter any difficulties via email: leoyuholo@gmail.com
